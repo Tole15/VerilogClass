@@ -1,8 +1,0 @@
-vhdl work "funPackage.vhd"
-vhdl work "dec7seg.vhd"
-vhdl work "contGen.vhd"
-vhdl work "compPackage.vhd"
-vhdl work "Reloj24.vhd"
-vhdl work "Prescaler.vhd"
-vhdl work "display4dig.vhd"
-vhdl work "Reloj24Completo.vhd"

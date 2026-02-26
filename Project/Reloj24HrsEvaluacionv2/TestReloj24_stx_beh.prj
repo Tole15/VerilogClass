@@ -1,7 +1,0 @@
-vhdl isim_temp "funPackage.vhd"
-vhdl isim_temp "compPackage.vhd"
-vhdl isim_temp "../libreriaVHDL/contGen.vhd"
-vhdl isim_temp "Reloj24.vhd"
-vhdl isim_temp "Prescaler.vhd"
-vhdl isim_temp "Reloj24Completo.vhd"
-vhdl isim_temp "test_Reloj24Completo.vhd"

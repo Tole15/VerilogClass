@@ -1,6 +1,0 @@
-work	"../libreriaVHDL/contGen.vhd"
-work	"Prescaler.vhd"
-work	"Reloj24.vhd"
-work	"Reloj24Completo.vhd"
-work	"compPackage.vhd"
-work	"funPackage.vhd"

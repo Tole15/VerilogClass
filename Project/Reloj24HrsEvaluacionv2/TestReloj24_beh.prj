@@ -1,5 +1,0 @@
-vhdl work "funPackage.vhd"
-vhdl work "compPackage.vhd"
-vhdl work "../libreriaVHDL/contGen.vhd"
-vhdl work "Reloj24.vhd"
-vhdl work "TestReloj24.vhd"

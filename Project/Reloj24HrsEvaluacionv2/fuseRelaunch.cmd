@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/home/ise/Reloj24Hrs/test_Reloj24Completo_isim_beh.exe" -prj "/home/ise/Reloj24Hrs/test_Reloj24Completo_beh.prj" "work.test_Reloj24Completo" 
