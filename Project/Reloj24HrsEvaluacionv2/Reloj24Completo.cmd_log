@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "/home/ise/Reloj24Hrs/Reloj24Completo.xst" -ofn "/home/ise/Reloj24Hrs/Reloj24Completo.syr" 
+xst -intstyle ise -ifn "C:/Users/Estudiante/Downloads/Reloj24Hrs/Reloj24Completo.xst" -ofn "C:/Users/Estudiante/Downloads/Reloj24Hrs/Reloj24Completo.syr" 
+xst -intstyle ise -ifn "/home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/Reloj24Completo.xst" -ofn "/home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/Reloj24Completo.syr" 
+xst -intstyle ise -ifn "/home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/Reloj24Completo.xst" -ofn "/home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/Reloj24Completo.syr" 
+xst -intstyle ise -ifn "/home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/Reloj24Completo.xst" -ofn "/home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/Reloj24Completo.syr" 
+xst -intstyle ise -ifn "/home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.xst" -ofn "/home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s250e-cp132-5 Reloj24Completo.ngc Reloj24Completo.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o Reloj24Completo_map.ncd Reloj24Completo.ngd Reloj24Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Reloj24Completo_map.ncd Reloj24Completo.ncd Reloj24Completo.pcf 
+xst -intstyle ise -ifn "/home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.xst" -ofn "/home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc3s250e-cp132-5 Reloj24Completo.ngc Reloj24Completo.ngd  
+map -intstyle ise -p xc3s250e-cp132-5 -cm area -ir off -pr off -c 100 -o Reloj24Completo_map.ncd Reloj24Completo.ngd Reloj24Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Reloj24Completo_map.ncd Reloj24Completo.ncd Reloj24Completo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Reloj24Completo.twx Reloj24Completo.ncd -o Reloj24Completo.twr Reloj24Completo.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f Reloj24Completo.ut Reloj24Completo.ncd 

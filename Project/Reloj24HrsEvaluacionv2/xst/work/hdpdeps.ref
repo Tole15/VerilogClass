@@ -1,0 +1,100 @@
+V3 68
+FL /home/ise/libreriaVHDL/contGen.vhd 2025/02/26.18:39:25 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-001/Reloj24Hrs/compPackage.vhd 2025/03/05.01:16:24 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-001/Reloj24Hrs/contGen.vhd 2025/03/05.00:55:35 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-001/Reloj24Hrs/dec7seg.vhd 2025/03/05.00:55:35 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-001/Reloj24Hrs/display4dig.vhd 2025/03/05.01:19:13 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-001/Reloj24Hrs/funPackage.vhd 2025/03/04.13:11:40 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-001/Reloj24Hrs/Prescaler.vhd 2025/03/05.01:10:29 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-001/Reloj24Hrs/Reloj24.vhd 2025/03/05.01:13:16 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-001/Reloj24Hrs/Reloj24Completo.vhd 2025/03/05.01:26:49 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/compPackage.vhd 2025/03/05.01:16:24 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/contGen.vhd 2025/03/05.00:55:35 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/dec7seg.vhd 2025/03/05.00:55:35 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/display4dig.vhd 2025/03/05.01:19:13 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/funPackage.vhd 2025/03/04.13:11:40 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/Prescaler.vhd 2025/03/05.01:28:30 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/Reloj24.vhd 2025/03/07.15:03:03 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-0011/Reloj24Hrs/Reloj24Completo.vhd 2025/03/07.15:01:08 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/compPackage.vhd 2025/03/28.13:57:26 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/contGen.vhd 2025/03/05.00:55:35 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/dec7seg.vhd 2025/03/05.00:55:35 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/display4dig.vhd 2025/03/05.01:19:13 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/funPackage.vhd 2025/03/04.13:11:40 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/Prescaler.vhd 2025/03/05.01:28:30 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/Reloj24.vhd 2025/03/28.13:35:48 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24Hrs/Reloj24Completo.vhd 2025/03/28.13:35:48 P.20131013
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/compPackage.vhd 2025/03/28.13:57:26 P.20131013
+PH work/compPackage 1743171068 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/compPackage.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/funPackage 1743171067 CD Prescaler \
+      CD ContGen CD dec7seg CD registro_p CD registro_sp CD reg_ps
+PB work/compPackage 1743171069 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/compPackage.vhd \
+      PH work/compPackage 1743171068
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/contGen.vhd 2025/03/05.00:55:35 P.20131013
+EN work/ContGen 1743171070 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/contGen.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/funPackage 1743171067
+AR work/ContGen/Behavioral 1743171071 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/contGen.vhd \
+      EN work/ContGen 1743171070
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/dec7seg.vhd 2025/03/05.00:55:35 P.20131013
+EN work/dec7seg 1743171072 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/dec7seg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/dec7seg/Behavioral 1743171073 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/dec7seg.vhd \
+      EN work/dec7seg 1743171072
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/display4dig.vhd 2025/03/05.01:19:13 P.20131013
+EN work/display4dig 1743171078 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/display4dig.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/compPackage 1743171069
+AR work/display4dig/Behavioral 1743171079 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/display4dig.vhd \
+      EN work/display4dig 1743171078 CP ContGen CP dec7seg
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/funPackage.vhd 2025/03/04.13:11:40 P.20131013
+PH work/funPackage 1743171066 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/funPackage.vhd \
+      PB ieee/std_logic_1164 1381692176
+PB work/funPackage 1743171067 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/funPackage.vhd \
+      PH work/funPackage 1743171066
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Prescaler.vhd 2025/03/05.01:28:30 P.20131013
+EN work/Prescaler 1743171074 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Prescaler.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Prescaler/Behavioral 1743171075 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Prescaler.vhd \
+      EN work/Prescaler 1743171074
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24.vhd 2025/03/28.13:35:48 P.20131013
+EN work/Reloj24 1743171076 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/compPackage 1743171069 \
+      PB work/funPackage 1743171067
+AR work/Reloj24/Behavioral 1743171077 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24.vhd \
+      EN work/Reloj24 1743171076 CP ContGen
+FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.vhd 2025/03/28.13:35:48 P.20131013
+EN work/Reloj24Completo 1743171080 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.vhd \
+      PB ieee/std_logic_1164 1381692176 PB work/compPackage 1743171069
+AR work/Reloj24Completo/Behavioral 1743171081 \
+      FL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.vhd \
+      EN work/Reloj24Completo 1743171080 AR work/Prescaler/Behavioral 1743171075 \
+      AR work/Reloj24/Behavioral 1743171077 AR work/display4dig/Behavioral 1743171079
+FL /home/ise/Reloj24Hrs/compPackage.vhd 2025/02/26.18:38:59 P.20131013
+FL /home/ise/Reloj24Hrs/funPackage.vhd 2025/02/26.18:40:37 P.20131013
+FL /home/ise/Reloj24Hrs/Prescaler.vhd 2025/02/26.21:06:47 P.20131013
+FL /home/ise/Reloj24Hrs/Reloj24.vhd 2025/02/26.21:16:14 P.20131013
+FL /home/ise/Reloj24Hrs/Reloj24Completo.vhd 2025/02/26.21:19:31 P.20131013
+FL C:/Users/Estudiante/Downloads/Reloj24Hrs/compPackage.vhd 2025/02/26.12:38:59 P.20131013
+FL C:/Users/Estudiante/Downloads/Reloj24Hrs/contGen.vhd 2025/02/26.13:23:21 P.20131013
+FL C:/Users/Estudiante/Downloads/Reloj24Hrs/funPackage.vhd 2025/02/26.12:40:37 P.20131013
+FL C:/Users/Estudiante/Downloads/Reloj24Hrs/Prescaler.vhd 2025/02/26.15:24:18 P.20131013
+FL C:/Users/Estudiante/Downloads/Reloj24Hrs/Reloj24.vhd 2025/02/28.08:25:58 P.20131013
+FL C:/Users/Estudiante/Downloads/Reloj24Hrs/Reloj24Completo.vhd 2025/02/26.15:19:31 P.20131013

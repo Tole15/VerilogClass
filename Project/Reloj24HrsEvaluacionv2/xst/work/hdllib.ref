@@ -1,0 +1,16 @@
+EN contgen NULL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/contGen.vhd sub00/vhpl05 1743171070
+PH funpackage NULL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/funPackage.vhd sub00/vhpl01 1743171066
+EN reloj24completo NULL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.vhd sub00/vhpl10 1743171080
+AR contgen behavioral /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/contGen.vhd sub00/vhpl06 1743171071
+PB funpackage funpackage /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/funPackage.vhd sub00/vhpl02 1743171067
+AR reloj24completo behavioral /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24Completo.vhd sub00/vhpl11 1743171081
+PB comppackage comppackage /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/compPackage.vhd sub00/vhpl04 1743171069
+AR reloj24 behavioral /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24.vhd sub00/vhpl07 1743171077
+AR prescaler behavioral /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Prescaler.vhd sub00/vhpl09 1743171075
+EN dec7seg NULL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/dec7seg.vhd sub00/vhpl12 1743171072
+PH comppackage NULL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/compPackage.vhd sub00/vhpl03 1743171068
+EN reloj24 NULL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Reloj24.vhd sub00/vhpl00 1743171076
+AR display4dig behavioral /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/display4dig.vhd sub00/vhpl15 1743171079
+EN display4dig NULL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/display4dig.vhd sub00/vhpl14 1743171078
+EN prescaler NULL /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/Prescaler.vhd sub00/vhpl08 1743171074
+AR dec7seg behavioral /home/ise/Reloj24Hrs-20250304T131011Z-00111/Reloj24HrsEvaluacion/dec7seg.vhd sub00/vhpl13 1743171073
