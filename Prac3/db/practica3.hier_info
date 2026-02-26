@@ -1,0 +1,58 @@
+|practica3
+clk => sel[0].CLK
+clk => sel[1].CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+interruptor[0] => Mux3.IN1
+interruptor[1] => Mux2.IN1
+interruptor[2] => Mux1.IN1
+interruptor[3] => Mux0.IN1
+interruptor[4] => Mux3.IN2
+interruptor[5] => Mux2.IN2
+interruptor[6] => Mux1.IN2
+interruptor[7] => Mux0.IN2
+boton[0] => Mux3.IN3
+boton[1] => Mux2.IN3
+boton[2] => Mux1.IN3
+boton[3] => Mux0.IN3
+catodo[0] << bcd_a_7seg_anodo_comun:udec.catodo
+catodo[1] << bcd_a_7seg_anodo_comun:udec.catodo
+catodo[2] << bcd_a_7seg_anodo_comun:udec.catodo
+catodo[3] << bcd_a_7seg_anodo_comun:udec.catodo
+catodo[4] << bcd_a_7seg_anodo_comun:udec.catodo
+catodo[5] << bcd_a_7seg_anodo_comun:udec.catodo
+catodo[6] << bcd_a_7seg_anodo_comun:udec.catodo
+punto << <VCC>
+anodo[0] << ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodo[1] << ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodo[2] << ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+anodo[3] << ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|practica3|bcd_a_7seg_anodo_comun:udec
+bcd[0] => Decoder0.IN3
+bcd[1] => Decoder0.IN2
+bcd[2] => Decoder0.IN1
+bcd[3] => Decoder0.IN0
+catodo[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+catodo[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+catodo[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+catodo[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+catodo[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+catodo[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+catodo[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

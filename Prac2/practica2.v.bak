@@ -1,0 +1,50 @@
+// ---------- binario -> BCD (0..9)
+module bin_a_bcd_1d (
+    input  [3:0] bin,
+    output [3:0] bcd,
+    output       invalido
+);
+    assign invalido = (bin > 4'd9);
+    assign bcd      = invalido ? 4'd0 : bin;
+endmodule
+
+// ---------- BCD -> 7 segmentos (ánodo común, cátodos activos en bajo)
+module bcd_a_7seg_anodo_comun (
+    input  [3:0] bcd,
+    output reg [6:0] catodo   // {a,b,c,d,e,f,g}
+);
+    always @* begin
+        case (bcd)
+            4'd0: catodo = 7'b0000001;
+            4'd1: catodo = 7'b1001111;
+            4'd2: catodo = 7'b0010010;
+            4'd3: catodo = 7'b0000110;
+            4'd4: catodo = 7'b1001100;
+            4'd5: catodo = 7'b0100100;
+            4'd6: catodo = 7'b0100000;
+            4'd7: catodo = 7'b0001111;
+            4'd8: catodo = 7'b0000000;
+            4'd9: catodo = 7'b0000100;
+            default: catodo = 7'b1111111;
+        endcase
+    end
+endmodule
+
+// ---------- TOP
+module practica2 (
+    input  [7:0] interruptor,   // usa interruptor[3:0] = número 0..9
+    output [6:0] catodo,        // CA..CG (activos en bajo)
+    output       punto,         // DP   (activo en bajo)
+    output [3:0] anodo          // AN3..AN0 (activos en bajo)
+);
+    wire [3:0] bcd;
+    wire       inval;
+    wire [6:0] catodo_int;
+
+    bin_a_bcd_1d           u0(.bin(interruptor[3:0]), .bcd(bcd), .invalido(inval));
+    bcd_a_7seg_anodo_comun u1(.bcd(bcd), .catodo(catodo_int));
+
+    assign catodo = inval ? 7'b1111111 : catodo_int; // 10..15 apaga
+    assign punto  = 1'b1;                            // apagado
+    assign anodo  = 4'b1110;                         // muestra en AN0
+endmodule

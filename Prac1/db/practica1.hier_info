@@ -1,0 +1,19 @@
+|practica1
+interruptor[0] => led[0].DATAIN
+interruptor[1] => led[1].DATAIN
+interruptor[2] => led[2].DATAIN
+interruptor[3] => led[3].DATAIN
+interruptor[4] => led[4].DATAIN
+interruptor[5] => led[5].DATAIN
+interruptor[6] => led[6].DATAIN
+interruptor[7] => led[7].DATAIN
+led[0] << interruptor[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] << interruptor[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] << interruptor[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] << interruptor[3].DB_MAX_OUTPUT_PORT_TYPE
+led[4] << interruptor[4].DB_MAX_OUTPUT_PORT_TYPE
+led[5] << interruptor[5].DB_MAX_OUTPUT_PORT_TYPE
+led[6] << interruptor[6].DB_MAX_OUTPUT_PORT_TYPE
+led[7] << interruptor[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

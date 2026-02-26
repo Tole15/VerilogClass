@@ -1,0 +1,79 @@
+module bcd_a_7seg_anodo_comun (
+    input  [3:0] bcd,
+    output reg [6:0] catodo
+);
+    always @* begin
+        case (bcd)
+            4'd0:  catodo = 7'b0000001;
+            4'd1:  catodo = 7'b1001111;
+            4'd2:  catodo = 7'b0010010;
+            4'd3:  catodo = 7'b0000110;
+            4'd4:  catodo = 7'b1001100;
+            4'd5:  catodo = 7'b0100100;
+            4'd6:  catodo = 7'b0100000;
+            4'd7:  catodo = 7'b0001111;
+            4'd8:  catodo = 7'b0000000;
+            4'd9:  catodo = 7'b0000100;
+            4'd10: catodo = 7'b0001000; // A
+            4'd11: catodo = 7'b1100000; // b
+            4'd12: catodo = 7'b0110001; // C
+            4'd13: catodo = 7'b1000010; // d
+            4'd14: catodo = 7'b0110000; // E
+            4'd15: catodo = 7'b0111000; // F
+            default: catodo = 7'b1111111;
+        endcase
+    end
+endmodule
+
+
+module practica3 #(
+    parameter integer CLK_HZ = 50_000_000,
+    parameter integer REFRESCO_TOTAL_HZ = 1000,   
+    parameter        BOTON_ACTIVO_BAJO = 1
+)(
+    input        clk,
+    input  [7:0] interruptor,
+    input  [3:0] boton,
+    output [6:0] catodo,
+    output       punto,
+    output [3:0] anodo
+);
+    wire [3:0] btn_nivel = BOTON_ACTIVO_BAJO ? ~boton : boton;
+
+    wire [3:0] dig0 = interruptor[3:0];
+    wire [3:0] dig1 = interruptor[7:4];
+    wire [3:0] dig2 = btn_nivel[3:0];
+    wire [3:0] dig3 = 4'h0;
+
+    localparam integer TICKS_POR_DIG =
+        (CLK_HZ / (REFRESCO_TOTAL_HZ * 4)) < 1 ? 1 : (CLK_HZ / (REFRESCO_TOTAL_HZ * 4));
+
+    reg [$clog2(TICKS_POR_DIG):0] cnt = 0;
+    reg [1:0] sel = 0;
+
+    always @(posedge clk) begin
+        if (cnt == TICKS_POR_DIG-1) begin
+            cnt <= 0;
+            sel <= sel + 2'd1;
+        end else begin
+            cnt <= cnt + 1;
+        end
+    end
+
+    reg [3:0] bcd_sel;
+    always @* begin
+        case (sel)
+            2'd0: bcd_sel = dig0;
+            2'd1: bcd_sel = dig1;
+            2'd2: bcd_sel = dig2;
+            2'd3: bcd_sel = dig3;
+        endcase
+    end
+
+    wire [6:0] seg;
+    bcd_a_7seg_anodo_comun udec(.bcd(bcd_sel), .catodo(seg));
+
+    assign catodo = seg;
+    assign punto  = 1'b1;
+    assign anodo  = ~(4'b0001 << sel);  
+endmodule
