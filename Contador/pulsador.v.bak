@@ -1,0 +1,11 @@
+module pulsador (
+input clk,
+output led);
+
+reg cuenta [4:0]
+
+
+always@(posedge clk)
+conteo<=conteo+1;
+end
+end module
